@@ -15,34 +15,34 @@
         }
         .home-page-content {
             text-align: center;
-            padding: 200px;
+            padding: 20px;
             color: white;
-            font-size: 30px;
+            font-size: 20px;
         }
         body {
-            background-image: url(‘https://images.app.goo.gl/GtfjnNspn1naoRQy6’); /* Replace with your image URL */
-            height: 100vh;
-            width: 100vw;
-            position: relative;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-image: url('https://example.com/shopping-background.jpg'); /* Replace with your image URL */
+            background-color: #f8f9fa; /* Fallback color */
             background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
         nav .logo {
             color: white;
-            font-size: 33px;
+            font-size: 24px;
             font-weight: bold;
             line-height: 70px;
-            padding-left: 110px;
+            padding-left: 20px;
         }
         nav {
-            height: 70px;
             background: #063247;
             box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
         }
         nav ol {
             float: right;
-            margin-right: 30px;
+            margin-right: 20px;
         }
         nav ol li {
             display: inline-block;
@@ -53,8 +53,7 @@
             display: block;
             padding: 0 15px;
             line-height: 70px;
-            font-size: 20px;
-            background: #063247;
+            font-size: 16px;
             transition: 0.5s;
         }
         nav ol li a:hover,
@@ -63,25 +62,50 @@
         }
         nav ol ol {
             position: absolute;
-            top: 70px;
-            border-top: 3px solid #23dbdb;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.3s linear;
+            top: 100%;
+            left: 0;
+            background: #063247;
+            width: 100%;
+            display: none;
         }
         nav ol li:hover > ol {
-            opacity: 1;
-            visibility: visible;
+            display: block;
         }
         nav ol ol li {
-            width: 180px;
-            display: list-item;
-            border: 1px solid #042331;
-            border-top: none;
-            background: #063247;
+            width: 100%;
+            display: block;
+            border-top: 1px solid #042331;
         }
         nav ol ol li a {
             line-height: 50px;
+            padding-left: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            nav {
+                height: auto;
+            }
+            nav ol {
+                float: none;
+                text-align: center;
+                margin: 0;
+                padding: 10px 0;
+            }
+            nav ol li {
+                display: block;
+            }
+            nav ol ol {
+                position: static;
+                display: block;
+                background: none;
+            }
+            nav ol ol li {
+                display: block;
+                border: none;
+            }
+            .home-page-content {
+                padding: 20px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -108,9 +132,12 @@
             </li>
         </ol>
     </nav>
-    <div class="overlay">
-        <div class="home-page-content">
-            <h1 class="text-center home-page-text h1-responsive">Welcome to Shopping Hub</h1>
+    <div class="home-page-content">
+        <h1>Welcome to Shopping Hub</h1>
+        <p>Hurry before stock runs out!</p>
+    </div>
+</body>
+</html>
             <h3 class="text-center home-supporting-text">Hurry before stock runs out!</h3>
         </div>
     </div>
