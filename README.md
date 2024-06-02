@@ -138,8 +138,3 @@
     </div>
 </body>
 </html>
-            <h3 class="text-center home-supporting-text">Hurry before stock runs out!</h3>
-        </div>
-    </div>
-</body>
-</html>
