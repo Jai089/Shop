@@ -13,20 +13,13 @@
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
         }
-        .home-page-content {
-            text-align: center;
-            padding: 20px;
-            color: white;
-            font-size: 20px;
-        }
         body {
-            background-image: url('https://example.com/shopping-background.jpg'); /* Replace with your image URL */
-            background-color: #f8f9fa; /* Fallback color */
-            background-size: cover;
-            background-position: center;
-            height: 100%;
+            background-color: #f8f9fa;
+            height: 100vh;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
         }
         nav .logo {
             color: white;
@@ -79,6 +72,16 @@
         nav ol ol li a {
             line-height: 50px;
             padding-left: 30px;
+        }
+        .home-page-content {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+            font-size: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         @media screen and (max-width: 768px) {
             nav {
